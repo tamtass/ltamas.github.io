@@ -30,7 +30,7 @@ main:
     url: /lab1/
     
   - title: "About me"
-    url: /about/
+    url: /aboutme/
     
   # - title: "CV"
   #   url: /cv-json/
