@@ -8,12 +8,18 @@ author_profile: true
 <style>
     #chessboard {
         border-collapse: collapse;
-        margin: 1rem 0;
+        table-layout: fixed;
+        width: min(90vmin, 560px);
+        aspect-ratio: 1/1;
+        margin: 1rem auto;
+        display: block;
     }
 
     #chessboard td {
-        width: 60px;
-        height: 60px;
+        width: 12.5%;
+        height: auto;
+        aspect-ratio: 1/1;
+        padding: 0;
         text-align: center;
         vertical-align: middle;
     }
