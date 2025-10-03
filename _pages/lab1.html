@@ -1,9 +1,42 @@
-<!-- _pages/lab1.html -->
+---
+layout: single
+title: "Chess"
+permalink: /lab1/
+author_profile: true
+---
 
 <style>
+    #chessboard {
+        border-collapse: collapse;
+        margin: 1rem 0;
+    }
+
+    #chessboard td {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    /* Dark squares*/
+    #chessboard tr:nth-child(even) td:nth-child(odd),
+    #chessboard tr:nth-child(odd) td:nth-child(even) {
+        background: #b58863;
+    }
+
+    /* Light squares*/
+    #chessboard tr:nth-child(even) td:nth-child(even),
+    #chessboard tr:nth-child(odd) td:nth-child(odd) {
+        background: #f0d9b5;
+    }
+
+    /* Border */
+    #chessboard td {
+        border: 1px solid #333;
+    }
 </style>
 
-<table id='sakktabla' cellspacing=0>
+<table id='chessboard' cellspacing=0>
     <tr>
         <td></td><td></td><td></td><td></td>
         <td></td><td></td><td></td><td></td>
